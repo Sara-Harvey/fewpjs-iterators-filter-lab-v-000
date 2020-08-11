@@ -12,3 +12,9 @@ function fuzzyMatch(drivers, letters) {
     return startLetters.includes(letters)
   })
 }
+
+function matchName(drivers, name) {
+  return drivers.filter(driver => {
+    return driver.name === name
+  })
+}
