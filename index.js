@@ -6,3 +6,9 @@ function findMatching(drivers, name) {
   })
 }
 
+function fuzzyMatch(drivers, letters) {
+  return drivers.filter(driver => {
+    let startLetters = driver.slice(0, letters.length)
+    return startLetters.includes(letters)
+  })
+}
